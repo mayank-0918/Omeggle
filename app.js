@@ -73,4 +73,4 @@ io.on("connection", function (socket) {
 
 app.use("/", indexRouter);
 
-server.listen(3000, () => console.log("Server running on port 3000"));
+server.listen(process.env.PORT||3000);
